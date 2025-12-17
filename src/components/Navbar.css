@@ -1,0 +1,177 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+
+.story{
+  cursor: grab;
+  color: aliceblue;
+
+}
+
+.story:hover{
+  color: #99582a;
+}
+
+/* ===============================
+   BODY
+================================ */
+body {
+  background-image: url("../components/Assets/Coffee-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Bona Nova SC", serif;
+}
+
+/* ===============================
+   NAVBAR CONTAINER
+================================ */
+.box1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+/* ===============================
+   MENU
+================================ */
+.first-phase {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+  font-family: "Chonburi", serif;
+  list-style: none;
+  font-size: 25px;
+}
+
+.first-phase li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.3s ease;
+}
+
+.first-phase li a:hover {
+  color: #99582a;
+}
+
+/* ===============================
+   LOGO
+================================ */
+.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 8px solid bisque;
+  object-fit: cover;
+}
+
+/* ===============================
+   HAMBURGER
+================================ */
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: aliceblue;
+  background: none;
+  border: none;
+  z-index: 1000;
+}
+
+/* ===============================
+   MOBILE DROPDOWN
+================================ */
+.mobile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background: rgba(0,0,0,0.9);
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 15px;
+  z-index: 999;
+}
+
+.mobile-dropdown a {
+  color: aliceblue;
+  font-size: 18px;
+  background-color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-dropdown a:hover {
+  color: aliceblue;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  /* Hide some links on tablet/mobile */
+  .home,
+  .story,
+  .upcoming,
+  .contact {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Mobile dropdown visible when active */
+  .mobile-dropdown {
+    display: flex;  
+  }
+
+  /* Adjust gap for smaller screens */
+  .first-phase {
+    gap: 20px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-phase {
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .mobile-dropdown {
+    width: 180px;
+    font-size: 16px;
+  }
+}

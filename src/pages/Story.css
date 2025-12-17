@@ -1,0 +1,92 @@
+/* ===============================
+   STORY SECTION
+================================ */
+#Story-section {
+  width: 100%;
+  padding: 100px 5vw;
+}
+
+.story-title {
+  text-align: center;
+  font-size: clamp(36px, 6vw, 60px);
+  color: aliceblue;
+  font-family: "Berkshire Swash", serif;
+  margin-bottom: 50px;
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.phase2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.media-container,
+.text-container {
+  flex: 1;
+  min-width: 400px;
+}
+
+.story-media {
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.text-container {
+  font-size: clamp(28px, 3vw, 50px);
+  line-height: clamp(40px, 4vw, 80px);
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .phase2 {
+    gap: 30px;
+  }
+
+  .media-container,
+  .text-container {
+    min-width: 300px;
+  }
+
+  .text-container {
+    font-size: clamp(24px, 4vw, 40px);
+    line-height: clamp(32px, 5vw, 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .phase2 {
+    flex-direction: column;
+    align-items: center; /* keep center horizontally */
+    gap: 20px;           /* reduce gap */
+  }
+
+  .media-container,
+  .text-container {
+    width: 100%;         /* take full width */
+    min-width: 0;        /* allow shrinking */
+  }
+
+  .text-container {
+    font-size: clamp(20px, 5vw, 36px);
+    font-weight: bold;
+    line-height: clamp(28px, 6vw, 50px);
+    text-align: center;
+    margin-top: 20px;    /* space below image */
+  }
+
+  .story-media {
+    border-radius: 25px;
+  }
+}
