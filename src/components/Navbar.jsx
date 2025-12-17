@@ -40,7 +40,7 @@ const Navbar = () => {
 
         <li>
           <NavLink to="/" onClick={closeMenu}>
-              <img src='./coffee-bg.jpg' alt="Coffee Shop Logo" className="logo" />
+              <img src='./logo.png' alt="Coffee Shop Logo" className="logo" />
           </NavLink>
         </li>
         <li>
