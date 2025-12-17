@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./Assets/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import coffeeImage from '../components/Assets/coffee-bg.jpg'
 
 
 const Navbar = () => {
@@ -41,7 +40,7 @@ const Navbar = () => {
 
         <li>
           <NavLink to="/" onClick={closeMenu}>
-              <img src={logo} alt="Coffee Shop Logo" className="logo" />
+              <img src='./coffee-bg.jpg' alt="Coffee Shop Logo" className="logo" />
           </NavLink>
         </li>
         <li>
