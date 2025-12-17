@@ -1,6 +1,6 @@
 import FilterCoffee from "../Assets/FilterCoffee.jpg";
 import MasalaTea from "../Assets/MasalaTea.jpg";
-import Paruppuvada from "../Assets/paruppuvada.jpg";
+import Paruppuvada from "../Assets/Paruppuvada.jpg";
 import Roadsidekalan from "../Assets/RoadsideKalan.jpg";
 import SweetPaniyaram from "../Assets/SweetPaniyaram.jpg";
 
