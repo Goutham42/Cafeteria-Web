@@ -2,7 +2,7 @@ import FilterCoffee from "../Assets/FilterCoffee.jpg";
 import MasalaTea from "../Assets/MasalaTea.jpg";
 import Paruppuvada from "../Assets/paruppuvada.jpg";
 import Roadsidekalan from "../Assets/Roadsidekalan.jpg";
-import SweetPaniyaram from "../Assets/sweetpaniyaram.jpg";
+import SweetPaniyaram from "../Assets/Sweetpaniyaram.jpg";
 
 
 export const MENU_ITEMS = [
