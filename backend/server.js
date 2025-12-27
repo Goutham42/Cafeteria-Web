@@ -4,9 +4,9 @@ import cors from "cors";
 import helmet from "helmet";
 import connectDB from "./config/db.js";
 
-import authRoutes from "./routes/auth.routes.js";
-import menuRoutes from "./routes/menu.routes.js";
-import orderRoutes from "./routes/order.routes.js";
+import authRoutes from "./routes/authRoutes.js";
+import menuRoutes from "./routes/menuRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
 
 dotenv.config();
 
